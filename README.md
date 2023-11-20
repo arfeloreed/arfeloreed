@@ -9,13 +9,13 @@
 
 - 🌱 I’m currently learning **React** & **Node.js**
 
-- 📝 I regularly write articles on [https://arfeloreed.pythonanywhere.com/](https://arfeloreed.pythonanywhere.com/)
+- 📝 I regularly write articles on [arfeloreed.pythonanywhere.com/](https://arfeloreed.pythonanywhere.com/)
 
 - 💬 Ask me about **Python, Django, Bootstrap5**
 
 - 📫 How to reach me **reedtorralba@reedrealm.com**
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/15Ya9dNcHYy6-8pccnDlZ4mwEYiRVC1X8/view?usp=drive_link](https://drive.google.com/file/d/15Ya9dNcHYy6-8pccnDlZ4mwEYiRVC1X8/view?usp=drive_link)
+- 📄 Know about my experiences [google-drive](https://drive.google.com/file/d/15Ya9dNcHYy6-8pccnDlZ4mwEYiRVC1X8/view?usp=drive_link)
 
 - ⚡ Fun fact **I love baking and cooking**
 
