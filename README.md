@@ -1,19 +1,19 @@
 ![MasterHead]("https://giphy.com/gifs/web-development-L8K62iTDkzGX6")
 <h1 align="center">Hi 👋, I'm Arfelo Reed Torralba</h1>
-<h3 align="center">A programming enthusiast, Python and Web Developer from Philippines.</h3>
+<h3 align="center">A programming enthusiast and Full Stack Developer from Philippines.</h3>
 <img align="right" alt="coding gif" width="400" src="https://media.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=arfeloreed&label=Profile%20views&color=0e75b6&style=flat" alt="arfeloreed" /> </p>
 
 <p align="left"> <a href="https://twitter.com/reedtorralba" target="blank"><img src="https://img.shields.io/twitter/follow/reedtorralba?logo=twitter&style=for-the-badge" alt="reedtorralba" /></a> </p>
 
-- 🌱 I’m currently learning **React** & **Node.js**
+- 🌱 I’m currently learning **Web 3.0** & **Block Chain**
 
 - 📝 I regularly write articles on [arfeloreed.pythonanywhere.com/](https://arfeloreed.pythonanywhere.com/)
 
-- 💬 Ask me about **Python, Django, Bootstrap5**
+- 💬 Ask me about **React, JS, Python, Django, Bootstrap5**
 
-- 📫 How to reach me **reedtorralba@reedrealm.com**
+- 📫 How to reach me **arfeloreedtorralba@gmail.com**
 
 - 📄 Know about my experiences [google-drive](https://drive.google.com/file/d/15Ya9dNcHYy6-8pccnDlZ4mwEYiRVC1X8/view?usp=drive_link)
 
