@@ -7,7 +7,7 @@
 
 <p align="left"> <a href="https://twitter.com/reedtorralba" target="blank"><img src="https://img.shields.io/twitter/follow/reedtorralba?logo=twitter&style=for-the-badge" alt="reedtorralba" /></a> </p>
 
-- 🌱 I’m currently learning **Web 3.0** & **Block Chain**
+- 🌱 I’m currently learning **Data Structures and Algorithms**
 
 - 📝 I regularly write articles on [arfeloreed.pythonanywhere.com/](https://arfeloreed.pythonanywhere.com/)
 
