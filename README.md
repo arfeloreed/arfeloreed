@@ -11,9 +11,9 @@
 
 - 👨‍💻 All of my projects are available at [arfeloreed.netlify](https://arfeloreed.netlify.app/)
 
-- 💬 Ask me about **React, JS, Python, Django, Bootstrap5**
+- 💬 Ask me about **React, JS, Python, PostgreSQL, Bootstrap5, Electron**
 
-- 📫 How to reach me **arfeloreedtorralba@gmail.com**
+- 📫 How to reach me **torralbaarfeloreed@gmail.com**
 
 - 📄 Know about my experiences [resume](https://drive.google.com/file/d/15Ya9dNcHYy6-8pccnDlZ4mwEYiRVC1X8/view?usp=drive_link)
 
