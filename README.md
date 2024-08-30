@@ -7,11 +7,11 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=arfeloreed&label=Profile%20views&color=0e75b6&style=flat" alt="arfeloreed" /> </p>
 
-- 🌱 I’m currently learning **Data Structures and Algorithms**
+- 🌱 I’m currently learning **Typescript and Tailwindcss**
 
 - 👨‍💻 All of my projects are available at [arfeloreed.netlify](https://arfeloreed.netlify.app/)
 
-- 💬 Ask me about **React, JS, Python, PostgreSQL, Bootstrap5, Electron**
+- 💬 Ask me about **React, JS, Python, PostgreSQL, Bootstrap5**
 
 - 📫 How to reach me **torralbaarfeloreed@gmail.com**
 
