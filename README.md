@@ -1,7 +1,7 @@
 ![MasterHead](./linkedin%20banner.webp)
 
 <h1 align="center">Hi 👋, I'm Arfelo Reed</h1>
-<h3 align="center">A programming enthusiast and Full Stack Developer from Philippines.</h3>
+<h3 align="center">Your handsome programmer from Philippines.</h3>
 
 <img align="right" alt="coding gif" width="400" src="https://media.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif">
 
@@ -17,7 +17,7 @@
 
 <!-- - 📄 Know about my experiences [resume](https://drive.google.com/file/d/15Ya9dNcHYy6-8pccnDlZ4mwEYiRVC1X8/view?usp=drive_link) -->
 
-- ⚡ Fun fact **I love baking and cooking**
+- ⚡**I like to bake and cook** 
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
