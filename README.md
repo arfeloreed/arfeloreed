@@ -1,7 +1,7 @@
 ![MasterHead](./linkedin%20banner.webp)
 
 <h1 align="center">Hi 👋, I'm Arfelo Reed</h1>
-<h3 align="center">Your handsome programmer from Philippines.</h3>
+<h3 align="center">Your lazy programmer from Philippines.</h3>
 
 <img align="right" alt="coding gif" width="400" src="https://media.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif">
 
