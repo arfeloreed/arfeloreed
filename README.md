@@ -9,8 +9,6 @@
 
 - 🌱 I’m currently learning **React-Native for mobile development**
 
-- 👨‍💻 All of my projects are available at [arfeloreed.netlify](https://arfeloreed.netlify.app/)
-
 <!-- - 💬 Ask me about **React, JS, Python, PostgreSQL, Bootstrap5** -->
 
 - 📫 How to reach me **torralbaarfeloreed@gmail.com**
@@ -22,7 +20,7 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/reedtorralba" target="blank"><img align="center" src="https://cdn.simpleicons.org/x/white" alt="reedtorralba" height="30" width="30" /></a>
-<a href="https://linkedin.com/in/arfeloreed" target="blank"><img align="center" src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="arfeloreed" height="30" width="30" /></a>
+<a href="https://linkedin.com/in/arfeloreed" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge" alt="arfeloreed" height="30" /></a>
 <a href="https://instagram.com/reedtorz" target="blank"><img align="center" src="https://cdn.simpleicons.org/instagram/E4405F" alt="reedtorz" height="30" width="30" /></a>
 </p>
 
