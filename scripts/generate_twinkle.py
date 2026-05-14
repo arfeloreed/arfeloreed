@@ -149,13 +149,13 @@ def build_svg(weeks, palette):
                 continue
 
             color = palette["levels"][level - 1]
-            begin = round(rng.uniform(0, 30), 2)
-            dur = round(rng.uniform(25, 40), 2)
+            begin = round(rng.uniform(0, 18), 2)
+            dur = round(rng.uniform(12, 22), 2)
             parts.append(
                 f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" '
                 f'rx="2" ry="2" fill="{color}">'
                 f'<animate attributeName="opacity" '
-                f'values="1;1;0;0;1;1" keyTimes="0;0.45;0.5;0.55;0.6;1" '
+                f'values="1;1;0;1;1" keyTimes="0;0.45;0.5;0.55;1" '
                 f'dur="{dur}s" begin="{begin}s" repeatCount="indefinite"/>'
                 f'</rect>'
             )
