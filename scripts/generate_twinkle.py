@@ -115,14 +115,25 @@ def build_svg(weeks, palette):
     ]
 
     num_weeks = len(weeks)
+    num_seeds = 4
     seeds = [
-        (rng.randint(0, num_weeks - 1), rng.randint(0, 6)),
-        (rng.randint(0, num_weeks - 1), rng.randint(0, 6)),
-        (rng.randint(0, num_weeks - 1), rng.randint(0, 6)),
+        (rng.randint(0, num_weeks - 1), rng.randint(0, 6))
+        for _ in range(num_seeds)
     ]
-    wave_speed = 0.18
-    wave_period = round(max(num_weeks, 7) * wave_speed * 1.2, 2)
-    infected_color = "#ff5e5e"
+
+    def cell_dist(wx, dy):
+        return min(((wx - sx) ** 2 + (dy - sy) ** 2) ** 0.5 for sx, sy in seeds)
+
+    max_dist = max(
+        cell_dist(w, d) for w in range(num_weeks) for d in range(7)
+    ) or 1.0
+
+    speed = 0.45
+    fill_hold = 4.0
+    reset_dur = 0.6
+    spread_dur = max_dist * speed
+    period = round(spread_dur + fill_hold + reset_dur, 2)
+    fade_f = round((spread_dur + fill_hold) / period, 4)
 
     seen_months = set()
     for w_idx, week in enumerate(weeks):
@@ -159,21 +170,17 @@ def build_svg(weeks, palette):
                 continue
 
             color = palette["levels"][level - 1]
-            dist = min(
-                ((w_idx - sx) ** 2 + (d_idx - sy) ** 2) ** 0.5
-                for sx, sy in seeds
-            )
-            begin = round((dist * wave_speed) % wave_period, 2)
+            dist = cell_dist(w_idx, d_idx)
+            appear_t = dist * speed
+            appear_f = round(appear_t / period, 4)
+            appear_f_end = round(min(appear_f + 0.008, fade_f - 0.002), 4)
             parts.append(
                 f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" '
                 f'rx="2" ry="2" fill="{color}">'
-                f'<animate attributeName="fill" '
-                f'values="{color};{infected_color};{color}" '
-                f'keyTimes="0;0.08;0.18" '
-                f'dur="{wave_period}s" begin="{begin}s" repeatCount="indefinite"/>'
                 f'<animate attributeName="opacity" '
-                f'values="1;1;0.25;1;1" keyTimes="0;0.05;0.12;0.2;1" '
-                f'dur="{wave_period}s" begin="{begin}s" repeatCount="indefinite"/>'
+                f'values="0;0;1;1;0" '
+                f'keyTimes="0;{appear_f};{appear_f_end};{fade_f};1" '
+                f'dur="{period}s" begin="0s" repeatCount="indefinite"/>'
                 f'</rect>'
             )
 
