@@ -41,3 +41,6 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Purge camo cache
+        uses: kevincobain2000/action-camo-purge@v1
