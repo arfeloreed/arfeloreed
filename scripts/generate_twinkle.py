@@ -114,6 +114,16 @@ def build_svg(weeks, palette):
         f'<rect width="100%" height="100%" fill="{palette["bg"]}"/>',
     ]
 
+    num_weeks = len(weeks)
+    seeds = [
+        (rng.randint(0, num_weeks - 1), rng.randint(0, 6)),
+        (rng.randint(0, num_weeks - 1), rng.randint(0, 6)),
+        (rng.randint(0, num_weeks - 1), rng.randint(0, 6)),
+    ]
+    wave_speed = 0.18
+    wave_period = round(max(num_weeks, 7) * wave_speed * 1.2, 2)
+    infected_color = "#ff5e5e"
+
     seen_months = set()
     for w_idx, week in enumerate(weeks):
         first = week["firstDay"]
@@ -149,14 +159,21 @@ def build_svg(weeks, palette):
                 continue
 
             color = palette["levels"][level - 1]
-            begin = round(rng.uniform(0, 18), 2)
-            dur = round(rng.uniform(12, 22), 2)
+            dist = min(
+                ((w_idx - sx) ** 2 + (d_idx - sy) ** 2) ** 0.5
+                for sx, sy in seeds
+            )
+            begin = round((dist * wave_speed) % wave_period, 2)
             parts.append(
                 f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" '
                 f'rx="2" ry="2" fill="{color}">'
+                f'<animate attributeName="fill" '
+                f'values="{color};{infected_color};{color}" '
+                f'keyTimes="0;0.08;0.18" '
+                f'dur="{wave_period}s" begin="{begin}s" repeatCount="indefinite"/>'
                 f'<animate attributeName="opacity" '
-                f'values="1;1;0;1;1" keyTimes="0;0.45;0.5;0.55;1" '
-                f'dur="{dur}s" begin="{begin}s" repeatCount="indefinite"/>'
+                f'values="1;1;0.25;1;1" keyTimes="0;0.05;0.12;0.2;1" '
+                f'dur="{wave_period}s" begin="{begin}s" repeatCount="indefinite"/>'
                 f'</rect>'
             )
 
