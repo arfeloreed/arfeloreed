@@ -1,0 +1,43 @@
+name: Generate Twinkle Animation
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/generate_twinkle.py"
+      - ".github/workflows/twinkle.yml"
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate twinkle SVGs
+        env:
+          GH_USER: arfeloreed
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p dist
+          python scripts/generate_twinkle.py --theme=dark > dist/twinkle-dark.svg
+          python scripts/generate_twinkle.py --theme=light > dist/twinkle-light.svg
+          cp dist/twinkle-dark.svg dist/twinkle.svg
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

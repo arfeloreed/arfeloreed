@@ -25,7 +25,7 @@
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=arfeloreed&" alt="arfeloreed" /></p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/arfeloreed/arfeloreed/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/arfeloreed/arfeloreed/output/snake.svg" />
-  <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/arfeloreed/arfeloreed/output/snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/arfeloreed/arfeloreed/output/twinkle-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/arfeloreed/arfeloreed/output/twinkle-light.svg" />
+  <img alt="github contribution twinkle animation" src="https://raw.githubusercontent.com/arfeloreed/arfeloreed/output/twinkle.svg" />
 </picture>
